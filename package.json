@@ -1,0 +1,31 @@
+{
+    "name": "backend-training",
+    "version": "0.0.1",
+    "license": "ISC",
+    "private": true,
+    "description": "Awesome project developed with TypeORM.",
+    "scripts": {
+        "start": "NODE_ENV=production node --max-old-space-size=2048 dist/index.js",
+        "build": "tsc",
+        "dev": "NODE_ENV=dev nodemon src/index.ts",
+        "typeorm": "typeorm-ts-node-commonjs"
+    },
+    "engines": {
+        "node": "18"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.14",
+        "@types/node": "^16.11.10",
+        "nodemon": "^2.0.20",
+        "ts-node": "10.7.0",
+        "typescript": "4.5.2"
+    },
+    "dependencies": {
+        "@godaddy/terminus": "^4.11.2",
+        "express": "^4.18.2",
+        "express-validator": "^6.14.2",
+        "mysql2": "^2.3.3",
+        "reflect-metadata": "^0.1.13",
+        "typeorm": "0.3.11"
+    }
+}
