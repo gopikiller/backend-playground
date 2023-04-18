@@ -1,8 +1,8 @@
-import { RequestHandler } from 'express';
+import { Request, Response } from 'express';
 
 export interface RouteType {
     method: string;
     route: string;
-    main: RequestHandler;
+    main: (req: Request, res: Response) => Promise<void>;
     authRole: string[];
 }

@@ -3,7 +3,7 @@ import { routes } from '../routes';
 
 export const serverSpecs = {
     accessControlAllowedDomains: ['*'],
-    port: 3000,
+    port: 80,
     env: process.env.NODE_ENV || 'test',
     routes,
     onShutdown: shutdownServer,
